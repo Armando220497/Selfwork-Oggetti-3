@@ -30,7 +30,19 @@ let bowling = {
         this.players.forEach(player => {
             console.log(player.name + ": " + player.scores + " (Total: " + player.totalScore + ")");
         });
+
+
+
+    },
+
+    vincitore: function () {
+
+        let winner = this.players[0]
+        console.log("Il vincitore e': " + winner.name + " con un punteggio di: " + winner.totalScore);
+
     }
+
+
 };
 
 
@@ -43,3 +55,5 @@ bowling.ordinaGiocatori();
 
 
 bowling.mostraPunteggi();
+
+bowling.vincitore();
